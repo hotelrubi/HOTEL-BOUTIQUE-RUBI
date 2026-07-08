@@ -1,50 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería — Hotel Rubi</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galería — Hotel Rubí</title>
+<meta name="description" content="Hotel Rubí, hospitalidad familiar en Tizayuca, Hidalgo. 26 habitaciones, Wi-Fi gratis, agua caliente 24 horas y estacionamiento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
-        <a href="index.html" class="nav-logo">Hotel Rubi</a>
+        <a href="index.html" class="nav-logo"><img src="img/logo.png" alt="Hotel Rubí"></a>
         <ul class="nav-links">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
             <li><a href="habitaciones.html">Habitaciones</a></li>
-            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="galeria.html" class="active">Galería</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
         <div class="nav-right">
-            <a href="https://www.facebook.com/share/1CnUJTxRYL/" target="_blank">FB</a>
-            <a href="https://www.instagram.com/hotelboutiquer" target="_blank">IG</a>
-            <a href="tel:+524421234567">📞</a>
-            <!-- <a href="https://wa.me/524421234567" target="_blank" class="btn">Reservar</a> -->
+            <a href="https://www.facebook.com/share/1CnUJTxRYL/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/hotelboutiquer" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="tel:7795961663" aria-label="Llamar"><i class="fas fa-phone"></i></a>
         </div>
+        <button class="nav-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
     </nav>
 
-    <section class="hero" style="height: 60vh; background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('');">
-        <div class="hero-content">
+    <section class="hero hero-sm">
+        <div class="hero-media"><div class="img-frame " data-label="Coloca aquí: img/hero-galeria.jpg"><img src="img/hero-galeria.jpg" alt="Galería del Hotel Rubí" loading="lazy" onerror="this.parentElement.classList.add(&quot;img-frame--empty&quot;)"></div></div>
+        <div class="hero-content framed">
+            <div class="eyebrow" style="justify-content:center;">Un vistazo</div>
             <h1>Galería</h1>
+            <p>Recorre nuestras instalaciones.</p>
         </div>
     </section>
 
     <section class="section">
-        <h2 class="section-title">Imágenes del Hotel</h2>
+        <div class="section-head">
+            <h2 class="section-title">Imágenes del Hotel</h2>
+        </div>
         <div class="gallery-grid">
-            <!-- <div class="gallery-item"><img src="https://picsum.photos/id/1015/600/400" alt=""></div>
-            <div class="gallery-item"><img src="https://picsum.photos/id/133/600/400" alt=""></div>
-            <div class="gallery-item"><img src="https://picsum.photos/id/201/600/400" alt=""></div>
-            <div class="gallery-item"><img src="https://picsum.photos/id/251/600/400" alt=""></div>
-            <div class="gallery-item"><img src="https://picsum.photos/id/106/600/400" alt=""></div>
-            <div class="gallery-item"><img src="https://picsum.photos/id/180/600/400" alt=""></div> -->
+            <div class="img-frame " data-label="Coloca aquí: img/galeria-1.jpg"><img src="img/galeria-1.jpg" alt="Fotografía 1 del Hotel Rubí" loading="lazy" onerror="this.parentElement.classList.add(&quot;img-frame--empty&quot;)"></div>
+            <div class="img-frame " data-label="Coloca aquí: img/galeria-2.jpg"><img src="img/galeria-2.jpg" alt="Fotografía 2 del Hotel Rubí" loading="lazy" onerror="this.parentElement.classList.add(&quot;img-frame--empty&quot;)"></div>
+            <div class="img-frame " data-label="Coloca aquí: img/galeria-3.jpg"><img src="img/galeria-3.jpg" alt="Fotografía 3 del Hotel Rubí" loading="lazy" onerror="this.parentElement.classList.add(&quot;img-frame--empty&quot;)"></div>
+            <div class="img-frame " data-label="Coloca aquí: img/galeria-4.jpg"><img src="img/galeria-4.jpg" alt="Fotografía 4 del Hotel Rubí" loading="lazy" onerror="this.parentElement.classList.add(&quot;img-frame--empty&quot;)"></div>
+            <div class="img-frame " data-label="Coloca aquí: img/galeria-5.jpg"><img src="img/galeria-5.jpg" alt="Fotografía 5 del Hotel Rubí" loading="lazy" onerror="this.parentElement.classList.add(&quot;img-frame--empty&quot;)"></div>
+            <div class="img-frame " data-label="Coloca aquí: img/galeria-6.jpg"><img src="img/galeria-6.jpg" alt="Fotografía 6 del Hotel Rubí" loading="lazy" onerror="this.parentElement.classList.add(&quot;img-frame--empty&quot;)"></div>
+            <div class="img-frame " data-label="Coloca aquí: img/galeria-7.jpg"><img src="img/galeria-7.jpg" alt="Fotografía 7 del Hotel Rubí" loading="lazy" onerror="this.parentElement.classList.add(&quot;img-frame--empty&quot;)"></div>
+            <div class="img-frame " data-label="Coloca aquí: img/galeria-8.jpg"><img src="img/galeria-8.jpg" alt="Fotografía 8 del Hotel Rubí" loading="lazy" onerror="this.parentElement.classList.add(&quot;img-frame--empty&quot;)"></div>
+            <div class="img-frame " data-label="Coloca aquí: img/galeria-9.jpg"><img src="img/galeria-9.jpg" alt="Fotografía 9 del Hotel Rubí" loading="lazy" onerror="this.parentElement.classList.add(&quot;img-frame--empty&quot;)"></div>
         </div>
     </section>
-
     <footer>
-        <p>&copy; 2026 Hotel Rubi. Todos los derechos reservados.</p>
+        <div class="footer-grid">
+            <div>
+                <div class="footer-logo"><img src="img/logo.png" alt="Hotel Rubí"></div>
+                <p>Hospitalidad familiar en el corazón de Tizayuca, Hidalgo, desde 2020. 26 habitaciones pensadas para viajeros, familias y parejas.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="habitaciones.html">Habitaciones</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="tel:7795961663"><i class="fas fa-phone" style="margin-right:8px;"></i>779 596 1663</a></li>
+                    <li><a href="https://maps.app.goo.gl/82hrW9SH6mD1bFYG8" target="_blank"><i class="fas fa-location-dot" style="margin-right:8px;"></i>Tizayuca, Hidalgo</a></li>
+                    <li><a href="https://www.facebook.com/share/1CnUJTxRYL/" target="_blank"><i class="fab fa-facebook-f" style="margin-right:8px;"></i>Facebook</a></li>
+                    <li><a href="https://www.instagram.com/hotelboutiquer" target="_blank"><i class="fab fa-instagram" style="margin-right:8px;"></i>Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Hotel Rubí. Todos los derechos reservados.</p>
+            <p>Calle Niños Héroes No. 19, Col. Cuxtitla, Tizayuca, Hgo.</p>
+        </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,64 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto — Hotel Rubi</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — Hotel Rubí</title>
+<meta name="description" content="Hotel Rubí, hospitalidad familiar en Tizayuca, Hidalgo. 26 habitaciones, Wi-Fi gratis, agua caliente 24 horas y estacionamiento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
-        <a href="index.html" class="nav-logo">Hotel Rubi</a>
+        <a href="index.html" class="nav-logo"><img src="img/logo.png" alt="Hotel Rubí"></a>
         <ul class="nav-links">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
             <li><a href="habitaciones.html">Habitaciones</a></li>
             <li><a href="galeria.html">Galería</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="contacto.html" class="active">Contacto</a></li>
         </ul>
         <div class="nav-right">
-            <a href="https://www.facebook.com/share/1CnUJTxRYL/" target="_blank">FB</a>
-            <a href="https://www.instagram.com/hotelboutiquer" target="_blank">IG</a>
-            <a href="tel:7795961663">📞</a>
+            <a href="https://www.facebook.com/share/1CnUJTxRYL/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/hotelboutiquer" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="tel:7795961663" aria-label="Llamar"><i class="fas fa-phone"></i></a>
         </div>
+        <button class="nav-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
     </nav>
 
-    <section class="hero" style="height: 60vh; background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('');">
-        <div class="hero-content">
+    <section class="hero hero-sm">
+        <div class="hero-media"><div class="img-frame " data-label="Coloca aquí: img/hero-contacto.jpg"><img src="img/hero-contacto.jpg" alt="Recepción del Hotel Rubí" loading="lazy" onerror="this.parentElement.classList.add(&quot;img-frame--empty&quot;)"></div></div>
+        <div class="hero-content framed">
+            <div class="eyebrow" style="justify-content:center;">Estamos para servirte</div>
             <h1>Contacto</h1>
+            <p>Escríbenos, llámanos o visítanos.</p>
         </div>
     </section>
 
     <section class="section">
-        <h2 class="section-title">Estamos para servirte</h2>
-        <div style="max-width: 700px; margin: 0 auto; text-align: center;">
-            <p style="font-size: 1.5rem;">📞 Teléfono: <a href="tel:7795961663" style="color:var(--gold);">779 596 1663</a></p>
-            <p style="font-size: 1.2rem; margin: 1.5rem 0;">📍 Calle Niños Héroes No. 19, Colonia Cuxtitla, Tizayuca, Hidalgo, C.P. 43800</p>
-            <a href="https://www.facebook.com/share/1CnUJTxRYL/" target="_blank">FB</a>
-            <a href="https://www.instagram.com/hotelboutiquer" target="_blank">IG</a>
-
+        <div class="info-grid">
+            <div class="info-card">
+                <i class="fas fa-phone"></i>
+                <h3>Teléfono</h3>
+                <p><a href="tel:7795961663">779 596 1663</a></p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-location-dot"></i>
+                <h3>Dirección</h3>
+                <p>Calle Niños Héroes No. 19, Col. Cuxtitla, Tizayuca, Hidalgo, C.P. 43800</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-share-nodes"></i>
+                <h3>Redes Sociales</h3>
+                <p>
+                    <a href="https://www.facebook.com/share/1CnUJTxRYL/" target="_blank">Facebook</a> ·
+                    <a href="https://www.instagram.com/hotelboutiquer" target="_blank">Instagram</a>
+                </p>
+            </div>
         </div>
     </section>
 
-    <section class="section" style="background: var(--dark2);">
-        <h2 class="section-title">Modalidades de Reservación</h2>
-        <div style="max-width: 800px; margin: 0 auto;">
-            <h3>Reservación Presencial</h3>
-            <p>Acude directamente a nuestras instalaciones para atención personalizada.</p>
-            
-            <h3>Reservación por Teléfono</h3>
-            <p>Llama al <strong>779 596 1663</strong>. Horario: lunes a viernes de 9:00 a.m. a 5:00 p.m.</p>
-            
-            <h3>Información Importante</h3>
-                <p>Lunes a Viernes: Reservación sin anticipo. Tolerancia de 2 horas para check-in.</p>
-                <p>Sábados y Domingos: Requiere pago total anticipado (transferencia o efectivo), idealmente 5-7 días antes.</p>
+    <section class="section section-alt">
+        <div class="section-head">
+            <div class="eyebrow" style="justify-content:center;">Cómo reservar</div>
+            <h2 class="section-title">Modalidades de Reservación</h2>
+        </div>
+        <div class="policy-block">
+            <div class="policy-item">
+                <h3>Reservación presencial</h3>
+                <p>Acude directamente a nuestras instalaciones para atención personalizada.</p>
+            </div>
+            <div class="policy-item">
+                <h3>Reservación por teléfono</h3>
+                <p>Llama al <strong>779 596 1663</strong>. Horario: lunes a viernes de 9:00 a.m. a 5:00 p.m.</p>
+            </div>
+            <div class="policy-item">
+                <h3>Lunes a viernes</h3>
+                <p>Reservación sin anticipo. Tolerancia de 2 horas para el check-in.</p>
+            </div>
+            <div class="policy-item">
+                <h3>Sábados y domingos</h3>
+                <p>Requiere pago total anticipado (transferencia o efectivo), idealmente 5 a 7 días antes.</p>
+            </div>
         </div>
     </section>
 
+    <section class="section">
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.9270895784116!2d-98.97706869999999!3d19.8430377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d19138d323630d%3A0xfdf1e654371098e!2sHotel%20Rub%C3%AD!5e0!3m2!1ses-419!2smx!4v1782427374784!5m2!1ses-419!2smx"
+                width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
     <footer>
-        <p>&copy; 2026 Hotel Rubi. Todos los derechos reservados.</p>
-        <p style="margin-top:10px; opacity:0.7;">Tizayuca, Hgo</p>
+        <div class="footer-grid">
+            <div>
+                <div class="footer-logo"><img src="img/logo.png" alt="Hotel Rubí"></div>
+                <p>Hospitalidad familiar en el corazón de Tizayuca, Hidalgo, desde 2020. 26 habitaciones pensadas para viajeros, familias y parejas.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="habitaciones.html">Habitaciones</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="tel:7795961663"><i class="fas fa-phone" style="margin-right:8px;"></i>779 596 1663</a></li>
+                    <li><a href="https://maps.app.goo.gl/82hrW9SH6mD1bFYG8" target="_blank"><i class="fas fa-location-dot" style="margin-right:8px;"></i>Tizayuca, Hidalgo</a></li>
+                    <li><a href="https://www.facebook.com/share/1CnUJTxRYL/" target="_blank"><i class="fab fa-facebook-f" style="margin-right:8px;"></i>Facebook</a></li>
+                    <li><a href="https://www.instagram.com/hotelboutiquer" target="_blank"><i class="fab fa-instagram" style="margin-right:8px;"></i>Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Hotel Rubí. Todos los derechos reservados.</p>
+            <p>Calle Niños Héroes No. 19, Col. Cuxtitla, Tizayuca, Hgo.</p>
+        </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,58 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nosotros — Hotel Rubi</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre Nosotros — Hotel Rubí</title>
+<meta name="description" content="Hotel Rubí, hospitalidad familiar en Tizayuca, Hidalgo. 26 habitaciones, Wi-Fi gratis, agua caliente 24 horas y estacionamiento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
-        <a href="index.html" class="nav-logo">Hotel Rubi</a>
+        <a href="index.html" class="nav-logo"><img src="img/logo.png" alt="Hotel Rubí"></a>
         <ul class="nav-links">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="sobre-nosotros.html" class="active">Sobre Nosotros</a></li>
             <li><a href="habitaciones.html">Habitaciones</a></li>
             <li><a href="galeria.html">Galería</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
         <div class="nav-right">
-            <a href="https://www.facebook.com/share/1CnUJTxRYL/" target="_blank">FB</a>
-            <a href="https://www.instagram.com/hotelboutiquer" target="_blank">IG</a>
-            <a href="tel:7795961663">📞</a>
+            <a href="https://www.facebook.com/share/1CnUJTxRYL/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/hotelboutiquer" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="tel:7795961663" aria-label="Llamar"><i class="fas fa-phone"></i></a>
         </div>
+        <button class="nav-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
     </nav>
 
-    <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('');">
-        <div class="hero-content">
+    <section class="hero hero-sm">
+        <div class="hero-media"><div class="img-frame " data-label="Coloca aquí: img/hero-about.jpg"><img src="img/hero-about.jpg" alt="Interior del Hotel Rubí" loading="lazy" onerror="this.parentElement.classList.add(&quot;img-frame--empty&quot;)"></div></div>
+        <div class="hero-content framed">
+            <div class="eyebrow" style="justify-content:center;">Desde 2020</div>
             <h1>Sobre Nosotros</h1>
-            <p>Una tradición de hospitalidad desde 2020</p>
+            <p>Una tradición de hospitalidad en Tizayuca, Hidalgo.</p>
         </div>
     </section>
 
     <section class="section">
-        <h2 class="section-title">Nuestra Historia</h2>
-        <div style="max-width: 800px; margin: 0 auto; font-size: 1.15rem;">
-            <p>El Hotel Rubí abrió sus puertas el 28 de noviembre de 2020 en Tizayuca, Hidalgo. Fundado como un establecimiento familiar, ha operado de forma ininterrumpida durante más de 5 años, atendiendo a viajeros, trabajadores y familias en la región.</p>
-            <p>Con 26 habitaciones, nos hemos consolidado como una opción accesible y cómoda en el municipio.</p>
+        <div class="split">
+            <div class="img-frame " data-label="Coloca aquí: img/about.jpg"><img src="img/about.jpg" alt="Fachada y pasillos del Hotel Rubí" loading="lazy" onerror="this.parentElement.classList.add(&quot;img-frame--empty&quot;)"></div>
+            <div>
+                <div class="eyebrow">Nuestra historia</div>
+                <h2 class="section-title" style="text-align:left;">Más de 5 años recibiendo viajeros</h2>
+                <p style="color:var(--text-muted);">El Hotel Rubí abrió sus puertas el 28 de noviembre de 2020 en Tizayuca, Hidalgo. Fundado como un establecimiento familiar, ha operado de forma ininterrumpida durante más de cinco años, atendiendo a viajeros, trabajadores y familias de la región.</p>
+                <p style="color:var(--text-muted);">Con 26 habitaciones, nos hemos consolidado como una opción accesible, cómoda y de confianza en el municipio.</p>
+            </div>
         </div>
     </section>
 
-    <section class="section" style="background: var(--dark2);">
-        <h2 class="section-title">Nuestra Actualidad</h2>
-        <p style="max-width: 820px; margin: 0 auto; text-align: center; font-size: 1.2rem;">
-            <strong>MISIÓN:</strong> Brindar un servicio de calidad y confort a la totalidad de nuestros clientes para satisfacer sus necesidades, donde la hospitalidad se convierte en sensación de hogar.<br><br>
-            <strong>VISIÓN:</strong> Ser un hotel que destaque frente a la competencia en la región gracias a nuestro servicio, mediante la mejora continua de nuestros procesos.
-        </p>
-        <p style="max-width: 820px; margin: 2rem auto; text-align: center; font-size: 1.1rem;">
-            <strong>Valores:</strong> Honradez, hospitalidad, calidad, limpieza, honestidad, respeto, empatía, seguridad e innovación.
-        </p>
+    <section class="section section-alt">
+        <div class="section-head">
+            <div class="eyebrow" style="justify-content:center;">Nuestra actualidad</div>
+            <h2 class="section-title">Misión & Visión</h2>
+        </div>
+        <div style="max-width:820px; margin:0 auto; display:grid; gap:34px;">
+            <div>
+                <h3 style="color:var(--gold-soft); font-size:1.15rem;">Misión</h3>
+                <p class="lead-text" style="text-align:left; margin:0;">Brindar un servicio de calidad y confort a la totalidad de nuestros huéspedes, satisfaciendo sus necesidades y convirtiendo la hospitalidad en una sensación de hogar.</p>
+            </div>
+            <div>
+                <h3 style="color:var(--gold-soft); font-size:1.15rem;">Visión</h3>
+                <p class="lead-text" style="text-align:left; margin:0;">Ser un hotel que destaque frente a la competencia en la región gracias a nuestro servicio, mediante la mejora continua de nuestros procesos.</p>
+            </div>
+        </div>
+        <div style="max-width:820px; margin:50px auto 0; text-align:center;">
+            <h3 style="color:var(--gold-soft); font-size:1.15rem;">Valores</h3>
+            <ul class="values-list" style="justify-content:center; text-align:left;">
+                <li>Honradez</li><li>Hospitalidad</li><li>Calidad</li><li>Limpieza</li>
+                <li>Honestidad</li><li>Respeto</li><li>Empatía</li><li>Seguridad e innovación</li>
+            </ul>
+        </div>
     </section>
-
     <footer>
-        <p>&copy; 2026 Hotel Rubi. Todos los derechos reservados.</p>
-        <p style="margin-top:10px; opacity:0.7;">Tizayuca, Hgo</p>
+        <div class="footer-grid">
+            <div>
+                <div class="footer-logo"><img src="img/logo.png" alt="Hotel Rubí"></div>
+                <p>Hospitalidad familiar en el corazón de Tizayuca, Hidalgo, desde 2020. 26 habitaciones pensadas para viajeros, familias y parejas.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="habitaciones.html">Habitaciones</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="tel:7795961663"><i class="fas fa-phone" style="margin-right:8px;"></i>779 596 1663</a></li>
+                    <li><a href="https://maps.app.goo.gl/82hrW9SH6mD1bFYG8" target="_blank"><i class="fas fa-location-dot" style="margin-right:8px;"></i>Tizayuca, Hidalgo</a></li>
+                    <li><a href="https://www.facebook.com/share/1CnUJTxRYL/" target="_blank"><i class="fab fa-facebook-f" style="margin-right:8px;"></i>Facebook</a></li>
+                    <li><a href="https://www.instagram.com/hotelboutiquer" target="_blank"><i class="fab fa-instagram" style="margin-right:8px;"></i>Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Hotel Rubí. Todos los derechos reservados.</p>
+            <p>Calle Niños Héroes No. 19, Col. Cuxtitla, Tizayuca, Hgo.</p>
+        </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

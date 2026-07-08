@@ -1,61 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suite King Size — Hotel Rubi</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        .gallery-detail { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin: 2rem 0; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suite King Size — Hotel Rubí</title>
+<meta name="description" content="Hotel Rubí, hospitalidad familiar en Tizayuca, Hidalgo. 26 habitaciones, Wi-Fi gratis, agua caliente 24 horas y estacionamiento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
-        <a href="index.html" class="nav-logo">Hotel Rubi</a>
+        <a href="index.html" class="nav-logo"><img src="img/logo.png" alt="Hotel Rubí"></a>
         <ul class="nav-links">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-            <li><a href="habitaciones.html">Habitaciones</a></li>
+            <li><a href="habitaciones.html" class="active">Habitaciones</a></li>
             <li><a href="galeria.html">Galería</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
         <div class="nav-right">
-            <a href="https://www.facebook.com/share/1CnUJTxRYL/" target="_blank">FB</a>
-            <a href="https://www.instagram.com/hotelboutiquer" target="_blank">IG</a>
-            <a href="tel:7795961663">📞</a>
+            <a href="https://www.facebook.com/share/1CnUJTxRYL/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/hotelboutiquer" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="tel:7795961663" aria-label="Llamar"><i class="fas fa-phone"></i></a>
         </div>
+        <button class="nav-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
     </nav>
 
-    <section class="hero" style="height: 70vh; background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('');">
-        <div class="hero-content">
+    <section class="hero hero-sm">
+        <div class="hero-media"><div class="img-frame " data-label="Coloca aquí: img/hero-king.jpg"><img src="img/hero-king.jpg" alt="Suite King Size" loading="lazy" onerror="this.parentElement.classList.add(&quot;img-frame--empty&quot;)"></div></div>
+        <div class="hero-content framed">
+            <div class="eyebrow" style="justify-content:center;">Habitación</div>
             <h1>Suite King Size</h1>
         </div>
     </section>
 
     <section class="section">
-        <div style="max-width: 1100px; margin: 0 auto;">
-            <h2>Descripción</h2>
-            <p>Habitación King Size para 2 personas. Incluye cama King, servicios completos de Wi-Fi y agua caliente 24 horas.</p>
-            
-            <h3 style="margin-top: 2rem;">Características</h3>
-            <ul style="columns: 2; font-size: 1.1rem;">
-                <li> Cama King Size</li>
-                <li> Wi-Fi Gratis</li>
-                <li> Agua caliente 24 horas</li>
-                <li> Aire acondicionado</li>
-                <li> Estacionamiento (sujeto a disponibilidad)</li>
+        <div class="container" style="max-width:1000px;">
+            <div class="eyebrow">Descripción</div>
+            <p style="color:var(--text-muted); font-size:1.08rem;">Habitación King Size para 2 personas. Incluye cama King, Wi-Fi gratuito y agua caliente 24 horas — pensada para quienes buscan más espacio y descanso.</p>
+
+            <h3 style="margin-top:2.6rem; font-size:1.2rem; color:var(--gold-soft);">Características</h3>
+            <ul class="features-list">
+                <li>Cama King Size</li>
+                <li>Wi-Fi gratis</li>
+                <li>Agua caliente 24 horas</li>
+                <li>Aire acondicionado</li>
+                <li>Estacionamiento (sujeto a disponibilidad)</li>
             </ul>
 
             <div class="gallery-detail">
-                <!-- Imágenes aquí -->
+                <div class="img-frame " data-label="Coloca aquí: img/king-1.jpg"><img src="img/king-1.jpg" alt="Suite King Size — foto 1" loading="lazy" onerror="this.parentElement.classList.add(&quot;img-frame--empty&quot;)"></div>
+                <div class="img-frame " data-label="Coloca aquí: img/king-2.jpg"><img src="img/king-2.jpg" alt="Suite King Size — foto 2" loading="lazy" onerror="this.parentElement.classList.add(&quot;img-frame--empty&quot;)"></div>
+                <div class="img-frame " data-label="Coloca aquí: img/king-3.jpg"><img src="img/king-3.jpg" alt="Suite King Size — foto 3" loading="lazy" onerror="this.parentElement.classList.add(&quot;img-frame--empty&quot;)"></div>
+            </div>
+
+            <div style="text-align:center; margin-top:50px;">
+                <a href="contacto.html" class="btn btn-solid">Reservar esta habitación</a>
             </div>
         </div>
     </section>
-
     <footer>
-        <p>&copy; 2026 Hotel Rubi. Todos los derechos reservados.</p>
-        <p style="margin-top:10px; opacity:0.7;">Tizayuca, Hgo</p>
+        <div class="footer-grid">
+            <div>
+                <div class="footer-logo"><img src="img/logo.png" alt="Hotel Rubí"></div>
+                <p>Hospitalidad familiar en el corazón de Tizayuca, Hidalgo, desde 2020. 26 habitaciones pensadas para viajeros, familias y parejas.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="habitaciones.html">Habitaciones</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="tel:7795961663"><i class="fas fa-phone" style="margin-right:8px;"></i>779 596 1663</a></li>
+                    <li><a href="https://maps.app.goo.gl/82hrW9SH6mD1bFYG8" target="_blank"><i class="fas fa-location-dot" style="margin-right:8px;"></i>Tizayuca, Hidalgo</a></li>
+                    <li><a href="https://www.facebook.com/share/1CnUJTxRYL/" target="_blank"><i class="fab fa-facebook-f" style="margin-right:8px;"></i>Facebook</a></li>
+                    <li><a href="https://www.instagram.com/hotelboutiquer" target="_blank"><i class="fab fa-instagram" style="margin-right:8px;"></i>Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Hotel Rubí. Todos los derechos reservados.</p>
+            <p>Calle Niños Héroes No. 19, Col. Cuxtitla, Tizayuca, Hgo.</p>
+        </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
