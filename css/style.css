@@ -58,7 +58,6 @@ img{ max-width:100%; display:block; }
 
 /* ---------- EYEBROW / DIVIDER (signature typographic device) ---------- */
 .eyebrow{
-    display:inline-flex;
     align-items:center;
     gap:14px;
     font-family:'Inter',sans-serif;
